@@ -5,6 +5,7 @@
 body{
     background:#F3F1FF;
     font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
 }
 .container{
     width:80%;
@@ -212,7 +213,7 @@ img{
 
 
 
-@media screen and (max-width:562px) {
+@media screen and (max-width:688px) {
     .container nav{
         flex-direction:column;
         align-items:center;
@@ -229,10 +230,11 @@ img{
     }
 
     .players{
-        grid-template-columns:repeat(2, 1fr);
+        grid-template-columns:repeat(1, 1fr);
         align-items: center;
     }
     .players .player{
+        flex-direction:column;
         justify-content:center;
     }
 
